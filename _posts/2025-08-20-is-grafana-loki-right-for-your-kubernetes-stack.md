@@ -15,7 +15,7 @@ Loki is designed with a specific philosophy: be cost-effective, highly scalable,
 
 Let's dive into what makes Loki special and the critical considerations you need to weigh before committing.
 
-![Diagram of the Grafana observability stack including Loki, Prometheus, and Tempo](/assets/images/posts/loki.png)
+![Loki is a horizontally-scalable, highly-available, multi-tenant log aggregation system](/assets/images/posts/loki.png)
 
 ---
 
