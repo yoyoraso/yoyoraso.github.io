@@ -86,15 +86,6 @@ layout: default
   </div>
 </section>
 
-<!-- DevOps Lifecycle CTA -->
-<section class="section" style="padding: 2rem 2rem 0; text-align: center;">
-  <div class="section__container">
-    <a href="/devops.html" class="btn btn--ghost" data-magnetic style="font-size: .9rem;">
-      <span>🔄 Explore My DevOps Lifecycle →</span>
-    </a>
-  </div>
-</section>
-
 <!-- Services Section -->
 <section class="section services" id="services">
   <div class="section__container">
@@ -142,6 +133,45 @@ layout: default
         <div class="service-card__tags">
           <span>Vault</span><span>Keycloak</span><span>Trivy</span><span>Cert-Manager</span>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DevOps Lifecycle Section -->
+<section class="section devops-lifecycle" id="lifecycle">
+  <div class="section__container">
+    <div class="section__header animate-in">
+      <span class="section__tag">How I Work</span>
+      <h2 class="section__title">DevOps Lifecycle</h2>
+    </div>
+    <p class="lifecycle__intro animate-in">Click on any stage to explore the tools and practices I use to build, ship, and operate production infrastructure.</p>
+    <div class="lifecycle__wrapper animate-in">
+      <div class="lifecycle__ring">
+        <svg class="lifecycle__svg" viewBox="0 0 600 600" fill="none">
+          <circle cx="300" cy="300" r="220" stroke="rgba(255,255,255,.04)" stroke-width="2"/>
+          <circle cx="300" cy="300" r="220" stroke="url(#lc-grad)" stroke-width="2" stroke-dasharray="8 6" class="lifecycle__dash"/>
+          <circle cx="300" cy="300" r="220" fill="none" id="lcPath"/>
+          <circle r="4" fill="#22d3ee"><animateMotion dur="12s" repeatCount="indefinite"><mpath href="#lcPath"/></animateMotion></circle>
+          <circle r="4" fill="#a78bfa"><animateMotion dur="12s" repeatCount="indefinite" begin="-3s"><mpath href="#lcPath"/></animateMotion></circle>
+          <circle r="4" fill="#22c55e"><animateMotion dur="12s" repeatCount="indefinite" begin="-6s"><mpath href="#lcPath"/></animateMotion></circle>
+          <circle r="4" fill="#f97316"><animateMotion dur="12s" repeatCount="indefinite" begin="-9s"><mpath href="#lcPath"/></animateMotion></circle>
+          <defs><linearGradient id="lc-grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#22d3ee" stop-opacity=".4"/><stop offset="50%" stop-color="#a78bfa" stop-opacity=".4"/><stop offset="100%" stop-color="#22c55e" stop-opacity=".4"/></linearGradient></defs>
+        </svg>
+        <div class="lifecycle__center"><div class="lifecycle__infinity">∞</div><div class="lifecycle__center-label">CI/CD</div></div>
+        <button class="lc-stage" data-stage="plan" style="--angle:0deg"><span class="lc-stage__icon">📋</span><span class="lc-stage__label">Plan</span></button>
+        <button class="lc-stage" data-stage="code" style="--angle:45deg"><span class="lc-stage__icon">💻</span><span class="lc-stage__label">Code</span></button>
+        <button class="lc-stage" data-stage="build" style="--angle:90deg"><span class="lc-stage__icon">🔨</span><span class="lc-stage__label">Build</span></button>
+        <button class="lc-stage" data-stage="test" style="--angle:135deg"><span class="lc-stage__icon">🧪</span><span class="lc-stage__label">Test</span></button>
+        <button class="lc-stage" data-stage="release" style="--angle:180deg"><span class="lc-stage__icon">🚀</span><span class="lc-stage__label">Release</span></button>
+        <button class="lc-stage" data-stage="deploy" style="--angle:225deg"><span class="lc-stage__icon">☁️</span><span class="lc-stage__label">Deploy</span></button>
+        <button class="lc-stage" data-stage="operate" style="--angle:270deg"><span class="lc-stage__icon">⚙️</span><span class="lc-stage__label">Operate</span></button>
+        <button class="lc-stage" data-stage="monitor" style="--angle:315deg"><span class="lc-stage__icon">📊</span><span class="lc-stage__label">Monitor</span></button>
+      </div>
+      <div class="lifecycle__detail" id="lc-detail">
+        <h3 class="lifecycle__detail-title" id="lc-title">Select a Stage</h3>
+        <p class="lifecycle__detail-desc" id="lc-desc">Click on any stage in the lifecycle to see the tools and practices I use.</p>
+        <div class="lifecycle__detail-tools" id="lc-tools"></div>
       </div>
     </div>
   </div>

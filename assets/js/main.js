@@ -107,3 +107,48 @@ if (terminal) {
   }, { threshold: 0.3 });
   termObserver.observe(terminal);
 }
+
+// === DevOps Lifecycle ===
+(function() {
+  const stages = {
+    plan: { title: '📋 Plan', desc: 'Defining infrastructure requirements, capacity planning, and translating business needs into scalable technical architecture.', tools: [{n:'Jira',c:''},{n:'Confluence',c:''},{n:'Architecture Diagrams',c:'purple'},{n:'Capacity Planning',c:'green'},{n:'Risk Assessment',c:'orange'}] },
+    code: { title: '💻 Code', desc: 'Writing Infrastructure as Code, automation scripts, and custom tooling. Everything version-controlled and peer-reviewed.', tools: [{n:'Terraform',c:'purple'},{n:'Pulumi',c:'purple'},{n:'Go',c:''},{n:'Python',c:''},{n:'Bash',c:''},{n:'Git',c:'orange'}] },
+    build: { title: '🔨 Build', desc: 'Automated pipelines that compile, package, and containerize applications. Every commit produces immutable artifacts.', tools: [{n:'GitLab CI',c:'orange'},{n:'GitHub Actions',c:''},{n:'Docker',c:''},{n:'Kaniko',c:''},{n:'Helm Charts',c:'purple'},{n:'OCI Images',c:'green'}] },
+    test: { title: '🧪 Test', desc: 'Automated testing — security scanning, infrastructure validation, and policy checks before anything reaches production.', tools: [{n:'Trivy',c:'green'},{n:'OPA/Rego',c:'green'},{n:'Terratest',c:'purple'},{n:'SonarQube',c:''},{n:'SAST/DAST',c:'orange'},{n:'Policy as Code',c:''}] },
+    release: { title: '🚀 Release', desc: 'GitOps-driven releases with automated promotion. Canary deployments, feature flags, and rollback strategies.', tools: [{n:'ArgoCD',c:'orange'},{n:'FluxCD',c:''},{n:'Helm',c:''},{n:'Kustomize',c:'purple'},{n:'Semantic Versioning',c:'green'},{n:'GitOps',c:''}] },
+    deploy: { title: '☁️ Deploy', desc: 'Production deployments to Kubernetes clusters across AWS and GCP. Zero-downtime rolling updates and blue-green deployments.', tools: [{n:'AWS EKS',c:'orange'},{n:'GCP GKE',c:''},{n:'Kubernetes',c:''},{n:'Terraform',c:'purple'},{n:'Cert-Manager',c:'green'},{n:'Ingress/ALB',c:''}] },
+    operate: { title: '⚙️ Operate', desc: 'Day-2 operations — secrets management, auto-scaling, backup strategies, disaster recovery, and high availability.', tools: [{n:'Vault',c:'purple'},{n:'Keycloak',c:''},{n:'AWS Secrets Manager',c:'orange'},{n:'HPA/VPA',c:''},{n:'Velero',c:'green'},{n:'Ansible',c:''}] },
+    monitor: { title: '📊 Monitor', desc: 'Full-stack observability with metrics, logs, and traces. Custom dashboards, intelligent alerting, and SLO-driven reliability.', tools: [{n:'Prometheus',c:'orange'},{n:'Grafana',c:'orange'},{n:'Loki',c:''},{n:'OpenTelemetry',c:''},{n:'OpenSearch',c:'green'},{n:'PagerDuty',c:'purple'}] }
+  };
+
+  const detail = document.getElementById('lc-detail');
+  const title = document.getElementById('lc-title');
+  const desc = document.getElementById('lc-desc');
+  const tools = document.getElementById('lc-tools');
+  if (!detail) return;
+
+  document.querySelectorAll('.lc-stage').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const data = stages[btn.dataset.stage];
+      if (!data) return;
+      document.querySelectorAll('.lc-stage').forEach(s => s.classList.remove('active'));
+      btn.classList.add('active');
+      title.textContent = data.title;
+      desc.textContent = data.desc;
+      tools.innerHTML = data.tools.map(t => `<span class="lc-tag${t.c ? ' lc-tag--'+t.c : ''}">${t.n}</span>`).join('');
+      detail.classList.add('visible');
+    });
+  });
+
+  // Auto-select first stage when visible
+  const lcSection = document.getElementById('lifecycle');
+  if (lcSection) {
+    const lcObs = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting) {
+        setTimeout(() => document.querySelector('[data-stage="plan"]')?.click(), 400);
+        lcObs.unobserve(lcSection);
+      }
+    }, { threshold: 0.3 });
+    lcObs.observe(lcSection);
+  }
+})();
