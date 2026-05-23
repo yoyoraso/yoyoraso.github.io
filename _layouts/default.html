@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <meta property="og:title" content="{{ page.title | default: site.title }}">
+  <meta property="og:description" content="{{ page.description | default: site.description }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
+</head>
+<body>
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__container">
+      <a href="{{ '/' | relative_url }}" class="nav__logo">
+        <span class="nav__logo-bracket">{</span> YR <span class="nav__logo-bracket">}</span>
+      </a>
+      <div class="nav__links">
+        <a href="{{ '/' | relative_url }}" class="nav__link" data-magnetic>Home</a>
+        <a href="{{ '/about/' | relative_url }}" class="nav__link" data-magnetic>About</a>
+        <a href="{{ '/blog/' | relative_url }}" class="nav__link" data-magnetic>Blog</a>
+        <a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank" class="nav__link" data-magnetic>LinkedIn</a>
+        <a href="https://github.com/{{ site.github_username }}" target="_blank" class="nav__link" data-magnetic>GitHub</a>
+      </div>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="{{ '/' | relative_url }}" class="mobile-menu__link">Home</a>
+    <a href="{{ '/about/' | relative_url }}" class="mobile-menu__link">About</a>
+    <a href="{{ '/blog/' | relative_url }}" class="mobile-menu__link">Blog</a>
+    <a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank" class="mobile-menu__link">LinkedIn</a>
+    <a href="https://github.com/{{ site.github_username }}" target="_blank" class="mobile-menu__link">GitHub</a>
+  </div>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__left">
+        <p class="footer__copyright">&copy; {{ 'now' | date: "%Y" }} Yahia Raslan. All rights reserved.</p>
+      </div>
+      <div class="footer__right">
+        <a href="mailto:{{ site.email }}" class="footer__link">Email</a>
+        <a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank" class="footer__link">LinkedIn</a>
+        <a href="https://github.com/{{ site.github_username }}" target="_blank" class="footer__link">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="{{ '/assets/js/cursor.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>

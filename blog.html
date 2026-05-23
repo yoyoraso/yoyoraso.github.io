@@ -1,0 +1,23 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+---
+
+<div class="blog-index">
+  <h1 class="blog-index__title animate-in">Blog</h1>
+  <div class="blog-index__grid">
+    {% for post in site.posts %}
+    <a href="{{ post.url }}" class="blog-card animate-in" data-magnetic>
+      <span class="blog-card__date">{{ post.date | date: "%b %d, %Y" }}</span>
+      <h3 class="blog-card__title">{{ post.title }}</h3>
+      <div class="blog-card__tags">
+        {% for tag in post.tags limit:3 %}
+        <span>{{ tag }}</span>
+        {% endfor %}
+      </div>
+      <span class="blog-card__read">Read article →</span>
+    </a>
+    {% endfor %}
+  </div>
+</div>

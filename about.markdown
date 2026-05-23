@@ -4,105 +4,66 @@ title: About Me
 permalink: /about/
 ---
 
-## 👋 Hi, I’m Yahia Ahmed Khalil Raslan  
+## Hi, I'm Yahia Raslan
 
-I’m a **DevOps Engineer** currently based in **Rotterdam, The Netherlands**.  
-With a strong background in systems administration and a passion for automation, I specialize in **building and managing scalable infrastructure in cloud environments**.  
+I'm a **Senior DevOps Engineer** based in **Rotterdam, The Netherlands**, currently working at **Swisscom**. I specialize in building and managing scalable cloud infrastructure, designing observability platforms, and automating everything that can be automated.
 
-My expertise covers:  
-- Designing and maintaining **CI/CD pipelines**  
-- Managing **Kubernetes clusters**  
-- Implementing **Infrastructure as Code** (Terraform / Pulumi)  
-- Leveraging open-source tools to build resilient systems  
+With 5+ years of hands-on experience across telecom, fintech, and enterprise environments, I've managed production Kubernetes clusters running 140+ microservices, built logging platforms from scratch, and designed CI/CD pipelines that ship code with confidence.
 
 ---
 
-## 📬 Contact Information
-- **Location**: Rotterdam, The Netherlands  
-- **Mobile**: +31 642016640  
-- **Email**: yahia.ahmed.raslan@gmail.com  
-- **Profiles**: [LinkedIn](https://www.linkedin.com/in/yahia-raslan-b07a56112/) | [GitHub](#) | [Medium](#)  
+## What I Bring to the Table
+
+- **Cloud Architecture** — AWS & GCP infrastructure design with Terraform and Pulumi
+- **Kubernetes** — EKS, GKE cluster management, Helm charts, and GitOps workflows
+- **CI/CD & GitOps** — GitLab CI, GitHub Actions, ArgoCD, FluxCD
+- **Observability** — Prometheus, Grafana, Loki, OpenSearch, OpenTelemetry
+- **Security** — HashiCorp Vault, Keycloak, cert-manager, Trivy scanning
+- **Automation** — Go, Python, Bash scripting for custom tooling
+- **Configuration Management** — Ansible playbooks and infrastructure automation
 
 ---
 
-## 💼 Work Experience  
+## Certifications
 
-### DevOps Engineer – Swisscom *(Feb 2024 – Present)*  
-- Built a new logging service with OpenSearch & Loki  
-- Managed **Kafka** as an ingestion protection layer  
-- Configured ingestion via **FluentBit / OpenTelemetry**  
-- Provisioned AWS infrastructure (EKS, Route53, VPC, Secrets Manager) with **Terraform/Pulumi**  
-- Applied **GitOps** workflows with ArgoCD/FluxCD  
-- Automated certificates via **Cert-Manager**  
-- Integrated **Vault** & AWS Secrets Manager for secrets management  
-- Deployed **Keycloak** for authentication/authorization  
-- Set up monitoring with **Prometheus** & **Trivy**  
-- Automated service deployments with **GitLab pipelines**  
-- Developed automation tools in **Go & Python**  
-
-### Senior DevOps Engineer – _VOIS (Vodafone Intelligent Solutions)_ *(Jul 2022 – Jan 2024)*  
-- Managed **GCP infrastructure (GKE)** with Terraform  
-- Administered K8s clusters with 140+ microservices  
-- Maintained **Jenkins shared libraries** for Java microservices  
-- Handled secrets with **Vault**  
-- Deployed services via **Helm + ArgoCD**  
-- Built pipelines for **iOS/Android apps** using Azure DevOps  
-
-### DevOps Engineer – Objects *(Apr 2021 – Jul 2022)*  
-- Managed on-prem & cloud servers (Linux, Windows, macOS on AWS, Azure, Linode)  
-- Created **Ansible playbooks** & **Jenkins pipelines**  
-- Automated backups to AWS S3  
-- Maintained **Dockerized applications**  
-
-### Systems Engineer – Vodafone *(Nov 2020 – Apr 2021)*  
-- Managed private cloud infrastructure & VMware virtualization  
-- Deployed & secured Linux VMs  
-
-### Application Support Engineer – Fawry *(Jul – Nov 2020)*  
-- Supported & upgraded **bank wallet apps (WebSphere)**  
-- Administered SQL databases  
-
-### Technical Support Engineer – Telecom Egypt *(Dec 2018 – May 2019)*  
-- Resolved internet/network connectivity issues  
-- Configured ADSL routers  
+- **Certified Kubernetes Administrator (CKA)**
+- **HashiCorp Terraform Associate**
+- **AWS Solutions Architect – Associate**
+- **Google Cloud Professional Cloud Architect**
 
 ---
 
-## 🛠️ Technical Skills
-- **OS**: Linux (expert), Windows & Unix (basic)  
-- **Cloud**: AWS, GCP  
-- **IaC**: Terraform, Pulumi  
-- **Containers/Orchestration**: Docker, Kubernetes  
-- **CI/CD & GitOps**: Jenkins, GitLab, Azure DevOps, GitHub Actions, ArgoCD, Helm, FluxCD  
-- **Secrets Management**: Vault, AWS Secrets Manager  
-- **Config Management**: Ansible  
-- **Monitoring/Logging**: Prometheus, Grafana, Loki, OpenSearch, ELK, Splunk, Instana, Nagios  
-- **Languages**: Bash, Python, Go, PHP  
-- **Databases**: Oracle, MySQL, MongoDB (familiar)  
-- **Virtualization**: VMware  
+## Career Timeline
+
+**DevOps Engineer @ Swisscom** — Feb 2024 – Present
+Building a new logging service with OpenSearch & Loki, managing AWS EKS with Terraform/Pulumi, GitOps with ArgoCD, and secrets management with Vault.
+
+**Senior DevOps Engineer @ VOIS (Vodafone)** — Jul 2022 – Jan 2024
+Managed GCP/GKE infrastructure with 140+ microservices. Jenkins shared libraries, Helm + ArgoCD deployments, mobile CI/CD pipelines.
+
+**DevOps Engineer @ Objects** — Apr 2021 – Jul 2022
+Multi-cloud infrastructure (AWS, Azure, Linode). Ansible automation, Jenkins pipelines, containerized applications.
+
+**Systems Engineer @ Vodafone** — Nov 2020 – Apr 2021
+Private cloud infrastructure, VMware virtualization, Linux server management.
 
 ---
 
-## 🎓 Education  
+## Education
 
-**Professional Diploma in Systems Administration & DevOps**  
-Information Technology Institute (ITI), Oct 2019 – Jun 2020  
+**Professional Diploma in Systems Administration & DevOps**
+Information Technology Institute (ITI), 2019 – 2020
 
-**B.Sc. in Electrical Engineering (Electronics & Communication)**  
-Faculty of Engineering, Alexandria University, Sep 2013 – Jun 2018  
-
----
-
-## 📜 Certifications  
-- Certified Kubernetes Administrator  
-- Certified Terraform Associate  
-- AWS Certified Solutions Architect – Associate  
-- Google Cloud Certified – Professional Cloud Architect  
+**B.Sc. in Electrical Engineering**
+Alexandria University, 2013 – 2018
 
 ---
 
-## 🌍 Personal Info  
-- **Nationality**: Egyptian  
-- **Date of Birth**: Nov 18, 1995  
-- **Military Status**: Exempted  
-- **Languages**: Arabic (native), English (fluent), German (basic)  
+## Get In Touch
+
+I'm available for freelance projects, consulting, and full-time opportunities.
+
+- **Email**: [support@yahiaraslan.com](mailto:support@yahiaraslan.com)
+- **LinkedIn**: [linkedin.com/in/yahia-ahmed-604481ba](https://linkedin.com/in/yahia-ahmed-604481ba)
+- **GitHub**: [github.com/yoyoraso](https://github.com/yoyoraso)
+- **Location**: Rotterdam, The Netherlands

@@ -1,0 +1,263 @@
+---
+layout: default
+---
+
+<!-- Hero Section -->
+<section class="hero" id="hero">
+  <div class="hero__bg">
+    <div class="hero__grid"></div>
+    <div class="hero__glow"></div>
+  </div>
+  <div class="hero__container">
+    <div class="hero__content">
+      <div class="hero__tag animate-in">
+        <span class="hero__tag-dot"></span>
+        Available for freelance & contracts
+      </div>
+      <h1 class="hero__title animate-in">
+        <span class="hero__title-line">Senior DevOps</span>
+        <span class="hero__title-line hero__title-line--accent">Engineer</span>
+      </h1>
+      <p class="hero__subtitle animate-in">
+        I architect cloud infrastructure, automate deployments, and build 
+        observability platforms that scale. 5+ years shipping production systems 
+        at Swisscom, Vodafone, and beyond.
+      </p>
+      <div class="hero__cta animate-in">
+        <a href="mailto:{{ site.email }}" class="btn btn--primary" data-magnetic>
+          <span>Let's Talk</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="{{ '/about/' | relative_url }}" class="btn btn--ghost" data-magnetic>
+          <span>View Experience</span>
+        </a>
+      </div>
+      <div class="hero__stats animate-in">
+        <div class="hero__stat">
+          <span class="hero__stat-number" data-count="5">0</span><span class="hero__stat-plus">+</span>
+          <span class="hero__stat-label">Years Experience</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-number" data-count="4">0</span>
+          <span class="hero__stat-label">Certifications</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-number" data-count="140">0</span><span class="hero__stat-plus">+</span>
+          <span class="hero__stat-label">Microservices Managed</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__visual animate-in">
+      <div class="terminal">
+        <div class="terminal__header">
+          <div class="terminal__dots">
+            <span></span><span></span><span></span>
+          </div>
+          <span class="terminal__title">~/infrastructure</span>
+        </div>
+        <div class="terminal__body">
+          <div class="terminal__line" data-delay="0">
+            <span class="terminal__prompt">$</span>
+            <span class="terminal__text" data-type="terraform apply -auto-approve"></span>
+          </div>
+          <div class="terminal__line terminal__line--output" data-delay="2000">
+            <span class="terminal__output">✓ aws_eks_cluster.prod: Creation complete</span>
+          </div>
+          <div class="terminal__line terminal__line--output" data-delay="2800">
+            <span class="terminal__output">✓ helm_release.argocd: Creation complete</span>
+          </div>
+          <div class="terminal__line terminal__line--output" data-delay="3600">
+            <span class="terminal__output">✓ kubernetes_namespace.monitoring: Created</span>
+          </div>
+          <div class="terminal__line" data-delay="4800">
+            <span class="terminal__prompt">$</span>
+            <span class="terminal__text" data-type="kubectl get pods -n prod"></span>
+          </div>
+          <div class="terminal__line terminal__line--output" data-delay="6200">
+            <span class="terminal__output terminal__output--success">All 47 pods running ✓</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero__scroll">
+    <span>Scroll</span>
+    <div class="hero__scroll-line"></div>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section class="section services" id="services">
+  <div class="section__container">
+    <div class="section__header animate-in">
+      <span class="section__tag">What I Do</span>
+      <h2 class="section__title">Engineering Excellence</h2>
+    </div>
+    <div class="services__grid">
+      <div class="service-card animate-in" data-magnetic>
+        <div class="service-card__icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+        </div>
+        <h3 class="service-card__title">Cloud Infrastructure</h3>
+        <p class="service-card__desc">AWS & GCP architecture with Terraform/Pulumi. EKS, GKE, VPC design, and multi-account strategies.</p>
+        <div class="service-card__tags">
+          <span>AWS</span><span>GCP</span><span>Terraform</span><span>Pulumi</span>
+        </div>
+      </div>
+      <div class="service-card animate-in" data-magnetic>
+        <div class="service-card__icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        </div>
+        <h3 class="service-card__title">CI/CD & GitOps</h3>
+        <p class="service-card__desc">End-to-end pipeline design with GitLab, GitHub Actions, ArgoCD, and FluxCD. Zero-downtime deployments.</p>
+        <div class="service-card__tags">
+          <span>ArgoCD</span><span>GitLab CI</span><span>Helm</span><span>FluxCD</span>
+        </div>
+      </div>
+      <div class="service-card animate-in" data-magnetic>
+        <div class="service-card__icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+        </div>
+        <h3 class="service-card__title">Observability</h3>
+        <p class="service-card__desc">Full-stack monitoring with Prometheus, Grafana, Loki, and OpenTelemetry. Custom dashboards and alerting.</p>
+        <div class="service-card__tags">
+          <span>Prometheus</span><span>Grafana</span><span>Loki</span><span>OTEL</span>
+        </div>
+      </div>
+      <div class="service-card animate-in" data-magnetic>
+        <div class="service-card__icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        </div>
+        <h3 class="service-card__title">Security & Secrets</h3>
+        <p class="service-card__desc">HashiCorp Vault, cert-manager, Keycloak SSO, and security scanning with Trivy. Zero-trust architecture.</p>
+        <div class="service-card__tags">
+          <span>Vault</span><span>Keycloak</span><span>Trivy</span><span>Cert-Manager</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Experience Section -->
+<section class="section experience" id="experience">
+  <div class="section__container">
+    <div class="section__header animate-in">
+      <span class="section__tag">Career</span>
+      <h2 class="section__title">Where I've Shipped</h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline__item animate-in">
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <div class="timeline__header">
+            <h3 class="timeline__role">DevOps Engineer</h3>
+            <span class="timeline__company">Swisscom</span>
+          </div>
+          <span class="timeline__date">Feb 2024 — Present</span>
+          <p class="timeline__desc">Building a new logging service (OpenSearch + Loki) with Kafka ingestion layer. Managing AWS EKS infrastructure with Terraform/Pulumi, GitOps with ArgoCD, and secrets management with Vault.</p>
+        </div>
+      </div>
+      <div class="timeline__item animate-in">
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <div class="timeline__header">
+            <h3 class="timeline__role">Senior DevOps Engineer</h3>
+            <span class="timeline__company">VOIS (Vodafone)</span>
+          </div>
+          <span class="timeline__date">Jul 2022 — Jan 2024</span>
+          <p class="timeline__desc">Managed GCP/GKE infrastructure with 140+ microservices. Jenkins shared libraries, Helm + ArgoCD deployments, and mobile CI/CD pipelines for iOS/Android.</p>
+        </div>
+      </div>
+      <div class="timeline__item animate-in">
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <div class="timeline__header">
+            <h3 class="timeline__role">DevOps Engineer</h3>
+            <span class="timeline__company">Objects</span>
+          </div>
+          <span class="timeline__date">Apr 2021 — Jul 2022</span>
+          <p class="timeline__desc">Multi-cloud infrastructure (AWS, Azure, Linode). Ansible automation, Jenkins pipelines, and containerized application management.</p>
+        </div>
+      </div>
+      <div class="timeline__item animate-in">
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <div class="timeline__header">
+            <h3 class="timeline__role">Systems Engineer</h3>
+            <span class="timeline__company">Vodafone</span>
+          </div>
+          <span class="timeline__date">Nov 2020 — Apr 2021</span>
+          <p class="timeline__desc">Private cloud infrastructure, VMware virtualization, and Linux server deployment and security.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Certifications -->
+<section class="section certs" id="certs">
+  <div class="section__container">
+    <div class="section__header animate-in">
+      <span class="section__tag">Credentials</span>
+      <h2 class="section__title">Certifications</h2>
+    </div>
+    <div class="certs__grid">
+      <div class="cert-card animate-in">
+        <div class="cert-card__badge">CKA</div>
+        <span class="cert-card__name">Certified Kubernetes Administrator</span>
+      </div>
+      <div class="cert-card animate-in">
+        <div class="cert-card__badge">TF</div>
+        <span class="cert-card__name">Terraform Associate</span>
+      </div>
+      <div class="cert-card animate-in">
+        <div class="cert-card__badge">AWS</div>
+        <span class="cert-card__name">Solutions Architect – Associate</span>
+      </div>
+      <div class="cert-card animate-in">
+        <div class="cert-card__badge">GCP</div>
+        <span class="cert-card__name">Professional Cloud Architect</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Blog Preview -->
+<section class="section blog-preview" id="blog">
+  <div class="section__container">
+    <div class="section__header animate-in">
+      <span class="section__tag">Writing</span>
+      <h2 class="section__title">Latest Posts</h2>
+    </div>
+    <div class="blog-preview__grid">
+      {% for post in site.posts limit:3 %}
+      <a href="{{ post.url }}" class="blog-card animate-in" data-magnetic>
+        <span class="blog-card__date">{{ post.date | date: "%b %d, %Y" }}</span>
+        <h3 class="blog-card__title">{{ post.title }}</h3>
+        <div class="blog-card__tags">
+          {% for tag in post.tags limit:3 %}
+          <span>{{ tag }}</span>
+          {% endfor %}
+        </div>
+        <span class="blog-card__read">Read article →</span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="section cta" id="cta">
+  <div class="section__container">
+    <div class="cta__content animate-in">
+      <h2 class="cta__title">Let's Build Something</h2>
+      <p class="cta__desc">Looking for a DevOps engineer who can architect your infrastructure, automate your deployments, and scale your platform? Let's talk.</p>
+      <div class="cta__actions">
+        <a href="mailto:{{ site.email }}" class="btn btn--primary btn--lg" data-magnetic>
+          <span>Get In Touch</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
